@@ -57,7 +57,6 @@ harness for Claude Code in [`.claude/`](.claude).
 
 ```
 .claude/                 AI harness (settings, sub-agents, slash commands)
-.github/workflows/       CI (runs the non-manual tests headless)
 docs/app-map.md          Explored app map: pages, locators, API, risks
 pages/                   Page Objects
 tests/dmoney-agent-journey.spec.ts   The 20 serial test steps
@@ -150,8 +149,3 @@ just re-run if you miss a window (each run creates a fresh agent).
 | [`.claude/commands/run-smoke.md`](.claude/commands/run-smoke.md) | `/run-smoke` — run positive tests |
 | [`.claude/commands/debug-failure.md`](.claude/commands/debug-failure.md) | `/debug-failure` — diagnose a failing test from its error context |
 | [`.mcp.json`](.mcp.json) | Playwright MCP server so the agent can drive a real browser |
-
-## CI
-
-`.github/workflows/playwright.yml` runs on push/PR. With `CI=true` the browser is headless
-and every `@manual` test is skipped (no one to type the OTP), so CI covers tests 01–09.
