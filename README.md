@@ -8,9 +8,11 @@ harness for Claude Code in [`.claude/`](.claude).
 
 ## 📹 Automation video (headed mode)
 
-<!-- Drag the video file from videos/ into this README on GitHub (edit mode) and paste the
-     generated link here, e.g. https://github.com/user-attachments/assets/xxxx -->
-`ADD VIDEO LINK HERE`
+Full regression run (all 20 tests, headed Chromium):
+
+▶️ **[Watch the automation video (docs/videos/regression-run.webm)](docs/videos/regression-run.webm)**
+
+GitHub opens the file page; click **View raw** (or Download) to play it in the browser.
 
 ## ✅ Regression Test Result
 
