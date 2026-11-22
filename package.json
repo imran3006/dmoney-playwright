@@ -1,0 +1,24 @@
+{
+  "name": "dmoney-playwright",
+  "version": "1.0.0",
+  "description": "Playwright E2E automation of the dMoney Portal Agent journey",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:regression": "playwright test --headed",
+    "test:smoke": "playwright test --headed --grep @smoke",
+    "test:auto": "playwright test --grep-invert @manual",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10"
+  }
+}
